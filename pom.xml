@@ -17,6 +17,7 @@
 		<java.version>1.8</java.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<lombok.version>1.18.2</lombok.version>
+		<servlet.version>3.1.0</servlet.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -54,6 +55,14 @@
 			<groupId>com.alibaba</groupId>
 			<artifactId>fastjson</artifactId>
 			<version>1.2.72</version>
+		</dependency>
+
+		<!-- J2EE支持-->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+			<version>${servlet.version}</version>
+			<scope>provided</scope>
 		</dependency>
 	</dependencies>
 
