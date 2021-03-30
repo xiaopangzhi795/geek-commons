@@ -541,11 +541,11 @@ public class HttpClientUtil {
     public static void sendDingdingMsgUrl(String url,String content, String earlyWarningPhones) {
         //        content = URLEncoder.encode(content);
         //"{ \"msgtype\": \"text\", \"text\": {\"content\": \"" + content + "\"}}";
-        JSONObject JSONObject_textMsg = new JSONObject();
-        JSONObject_textMsg.put("msgtype", "text");
+        JSONObject textMsg = new JSONObject();
+        textMsg.put("msgtype", "text");
         JSONObject JSONObject_text = new JSONObject();
         JSONObject_text.put("content", content);
-        JSONObject_textMsg.put("text", JSONObject_text);
+        textMsg.put("text", JSONObject_text);
         if (StringUtils.isNotBlank(earlyWarningPhones)) {
             String[] atSplit = earlyWarningPhones.split("[|]");
             JSONObject atJson = new JSONObject();
@@ -556,10 +556,10 @@ public class HttpClientUtil {
             }
             //将多个手机号塞入请求json
             atJson.put("atMobiles", atMobiles);
-            JSONObject_textMsg.put("at", atJson);
+            textMsg.put("at", atJson);
         }
         try {
-            doPost(url, JSONObject_textMsg, 60 * 1000, 60 * 1000, "UTF-8", false);
+            doPost(url, textMsg, 60 * 1000, 60 * 1000, "UTF-8", false);
         }
         catch (Exception e) {
         }
