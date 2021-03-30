@@ -543,9 +543,9 @@ public class HttpClientUtil {
         //"{ \"msgtype\": \"text\", \"text\": {\"content\": \"" + content + "\"}}";
         JSONObject textMsg = new JSONObject();
         textMsg.put("msgtype", "text");
-        JSONObject JSONObject_text = new JSONObject();
-        JSONObject_text.put("content", content);
-        textMsg.put("text", JSONObject_text);
+        JSONObject jsonText = new JSONObject();
+        jsonText.put("content", content);
+        textMsg.put("text", jsonText);
         if (StringUtils.isNotBlank(earlyWarningPhones)) {
             String[] atSplit = earlyWarningPhones.split("[|]");
             JSONObject atJson = new JSONObject();
