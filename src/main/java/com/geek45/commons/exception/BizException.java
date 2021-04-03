@@ -14,7 +14,7 @@ public class BizException extends RuntimeException {
     }
 
     public BizException(String errCode, String errMsg) {
-        super();
+        super(errMsg);
         this.errCode = errCode;
         this.errMsg = errMsg;
     }
