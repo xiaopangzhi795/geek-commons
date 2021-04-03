@@ -35,6 +35,12 @@ public class Asserts {
         }
     }
 
+    public static void equalsFalse(boolean expression, String errCode, String errMsg) {
+        if (!expression) {
+            throwException(errCode, errMsg);
+        }
+    }
+
     public static void throwException(String errCode, String errMsg) {
         throw new BizException(errCode, errMsg);
     }
