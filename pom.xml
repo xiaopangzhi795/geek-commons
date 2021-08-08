@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.geek45</groupId>
 	<artifactId>commons</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.2-SNAPSHOT</version>
 	<name>commons</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
@@ -102,6 +102,12 @@
 			<groupId>cz.mallat.uasparser</groupId>
 			<artifactId>uasparser</artifactId>
 			<version>0.6.2</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.geek45</groupId>
+			<artifactId>taobao-sdk</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 	</dependencies>
 

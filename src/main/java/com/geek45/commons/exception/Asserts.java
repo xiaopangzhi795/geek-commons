@@ -41,7 +41,20 @@ public class Asserts {
         }
     }
 
-    public static void throwException(String errCode, String errMsg) {
-        throw new BizException(errCode, errMsg);
+    public static void throwValidatorException(String code, String message) {
+        throw new GeekValidatorException(code, message);
     }
+
+    public static void throwBizException(String code, String message) {
+        throw new GeekBizException(code, message);
+    }
+
+    public static void throwCommonException(String code, String message){
+        throw new GeekCommonException(code, message);
+    }
+
+    public static void throwException(String code, String message) throws GeekException {
+        throw new GeekException(code, message);
+    }
+
 }
