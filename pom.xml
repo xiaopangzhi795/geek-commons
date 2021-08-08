@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.geek45</groupId>
 	<artifactId>commons</artifactId>
-	<version>0.0.2-SNAPSHOT</version>
+	<version>1.0.1-SNAPSHOT</version>
 	<name>commons</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
