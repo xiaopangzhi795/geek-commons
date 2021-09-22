@@ -104,11 +104,6 @@
 			<version>0.6.2</version>
 		</dependency>
 
-		<dependency>
-			<groupId>com.geek45</groupId>
-			<artifactId>taobao-sdk</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-		</dependency>
 	</dependencies>
 
 	<build>
@@ -132,6 +127,7 @@
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.8.1</version>
 				<configuration>
+					<skip>true</skip>
 					<source>${java.version}</source>
 					<target>${java.version}</target>
 					<encoding>${project.build.sourceEncoding}</encoding>
